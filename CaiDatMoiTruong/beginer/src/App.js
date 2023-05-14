@@ -1,20 +1,34 @@
-import logo from './logo.svg'
+import { useState } from 'react'
 import './App.css'
+import Clock from './Clock'
+import BareInput from './BareInput'
+import Layout from './Layout'
+import BareButton from './BareButton'
+import LoginControl from './LoginControl'
+import CorrectlyState from './CorrectlyState'
+import ProductList from './ProductList/ProductList'
+import Form from './Form/Form'
+import UncontrolledComponent from './Form/UncontrolledComponent'
+import Calculator from './Calculator/Calculator'
 
 function App() {
-  // JSX
+  // const [name, setName] = useState('Casio')
   return (
     <div className='App'>
-      <h1>Create by Hieu</h1>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-          Learn React
-        </a>
-      </header>
+      {/* <button onClick={() => setName('Apple')}>Change Name</button>
+      <Clock name={name} /> */}
+
+      {/* <Layout>
+        <h1>Hello</h1>
+        <BareInput type='' value='100' id='123' autoFocus onChange={() => {}} />
+        <BareButton />
+      </Layout> */}
+      {/* <LoginControl isLoggedIn={false} /> */}
+      {/* <CorrectlyState /> */}
+      {/* <ProductList /> */}
+      {/* <Form /> */}
+      {/* <UncontrolledComponent /> */}
+      <Calculator />
     </div>
   )
 }
